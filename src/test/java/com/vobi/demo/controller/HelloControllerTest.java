@@ -24,7 +24,7 @@ class HelloControllerTest {
 	void testIndex()throws Exception {
 		
 		//Arrange
-		String expect="Hello from Spring Boot and Azure Devops Diego";
+		String expect="Hello from Spring Boot and Azure Devops 0.0.2";
 		
 		//Act
 		mockMvc.perform(MockMvcRequestBuilders.get("/")

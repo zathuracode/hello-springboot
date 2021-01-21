@@ -8,7 +8,7 @@ public class HelloController {
 	
 	@RequestMapping("/")
 	public String index() {
-		return "Hello from Spring Boot and Azure Devops 0.0.4 Johan";
+		return "Hello from Spring Boot and Azure Devops";
 	}
 
 }

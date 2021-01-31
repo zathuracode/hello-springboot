@@ -1,4 +1,4 @@
-package com.vobi.demo;
+package co.com.coomeva.devops.hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

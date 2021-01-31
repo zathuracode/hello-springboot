@@ -23,10 +23,24 @@ class HelloControllerTest {
 	void testIndex()throws Exception {
 		
 		//Arrange
-		String expect="Hello from Spring Boot and Azure Devops 0.0.2";
+		String expect="Hello from Spring Boot and Azure Devops";
 		
 		//Act
 		mockMvc.perform(MockMvcRequestBuilders.get("/")
+				.accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk())
+				.andExpect(content().string(equalTo(expect)));
+	}
+	
+	@Test
+	void testIndexParam()throws Exception {
+		
+		//Arrange
+		String name="Juan";
+		String expect="Hello "+name+" from Spring Boot and Azure Devops";
+		
+		//Act
+		mockMvc.perform(MockMvcRequestBuilders.get("/"+name)
 				.accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo(expect)));

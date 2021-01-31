@@ -11,12 +11,12 @@ public class HelloController {
 	
 	@GetMapping
 	public String index() {
-		return "Hola desde Spring Boot and Azure Devops";
+		return "Hello from Spring Boot and Azure Devops";
 	}
 	
 	@GetMapping("/{name}")
 	public String index(@PathVariable("name") String name) {
-		return "Hola "+name+" desde Spring Boot and Azure Devops";
+		return "Hello "+name+" from Spring Boot and Azure Devops";
 	}
 
 }

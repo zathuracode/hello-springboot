@@ -10,7 +10,7 @@ public class HelloController {
 	
 	@GetMapping
 	public String index() {
-		return "Hello from Spring Boot and Azure Devops";
+		return "Hello from Spring Boot and Azure Devops 0.0.2";
 	}
 
 }

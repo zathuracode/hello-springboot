@@ -23,7 +23,7 @@ class HelloControllerTest {
 	void testIndex()throws Exception {
 		
 		//Arrange
-		String expect="Hola desde Spring Boot Y Azure Cloud";
+		String expect="Hello from Spring Boot and Azure Cloud";
 		
 		//Act
 		mockMvc.perform(MockMvcRequestBuilders.get("/")
@@ -37,7 +37,7 @@ class HelloControllerTest {
 		
 		//Arrange
 		String name="Juan";
-		String expect="Hola "+name+" desde Spring Boot Y Azure Devops";
+		String expect="Hello "+name+" from Spring Boot and Azure Cloud";
 		
 		//Act
 		mockMvc.perform(MockMvcRequestBuilders.get("/"+name)
